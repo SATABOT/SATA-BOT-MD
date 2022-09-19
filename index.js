@@ -122,25 +122,25 @@ let feler = pickRandom(doku)
                 if (anu.action == 'add') {
                 var buffer = await getBuffer(ppuser)
                 let fgclink = {key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "6289523258649-1604595598@g.us"}, "message": {orderMessage: {itemCount: 9999999,status: 200, thumbnail: buffer, surface: 200, message: `${metadata.subject}`, orderTitle: 'memek', sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
-                he = `⚡🕊خوش آمدید به ${metadata.subject} @${num.split("@")[0]}\n\n${metadata.desc}`
-                let link = `https://youtube.com/channel/UCIdvdgFwdssFC0Nxx9Xk1dQ`
+                he = `⚡خوش آمدی به ${metadata.subject} @${num.split("@")[0]}\n\n${metadata.desc}`
+                let link = `https://chat.whatsapp.com/HWUyQZfZaIaEp7TN1rqLsx`
 let buttons = [
-{buttonId: `halo`, buttonText: {displayText: '😈خوش آمدید🥀'}, type: 1}
+{buttonId: `halo`, buttonText: {displayText: '💫SATA BOT'}, type: 1}
 ]
 let buttonMessage = {
 document: fs.readFileSync('./lib/tes.xlsx'),
 mimetype: feler,
 jpegThumbnail:buffer,
 mentions: [num],
-fileName: ` 😈خوش آمدید🥀 به ${metadata.subject}`,
+fileName: `خوش آمدی به🎭 ${metadata.subject}`,
 fileLength: 99999999999999,
 caption: he,
-footer: `©BALOCH EDIT 2022`,
+footer: `©SATA BOT 2022`,
 buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
-title: `🥀خوش آمد گویی ربات بلوچ ادیت😈`,
-body: `😈چنل ما را سابسکرایب کنید🥀`,
+title: `SATA`,
+body: `♻️گروه پشتیبانی ربات `,
 mediaType:2,
 thumbnail: buffer,
 sourceUrl: link,
@@ -150,25 +150,25 @@ mediaUrl: link,
 ZimBotInc.sendMessage(anu.id, buttonMessage, {quoted:fgclink})
                 } else if (anu.action == 'remove') {
                     let fgclink = {key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "6289523258649-1604595598@g.us"}, "message": {orderMessage: {itemCount: 9999999,status: 200, thumbnail: buffer, surface: 200, message: `${metadata.subject}`, orderTitle: 'memek', sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
-                    he = `🥀کسی لایق بودن در گپ یا کانال رو نداره همین میشه😈 ${metadata.subject} @${num.split("@")[0]}\n\n${metadata.desc}`
-                    let link = `https://youtu.be/ww4z2m3uORU`
+                    he = `🎗لایق موندن در گپ یا کانال رو نداشت🕷 ${metadata.subject} @${num.split("@")[0]}\n\n${metadata.desc}`
+                    let link = `https://chat.whatsapp.com/F54eghVKahu00gwHoBDVTu`
 let buttons = [
-{buttonId: `halo`, buttonText: {displayText: '🥀خدافس😈'}, type: 1}
+{buttonId: `halo`, buttonText: {displayText: '🥀SATA'}, type: 1}
 ]
 let buttonMessage = {
 document: fs.readFileSync('./lib/tes.xlsx'),
 mimetype: feler,
 jpegThumbnail:buffer,
 mentions: [num],
-fileName: `🥀برو بدرک😈 ${metadata.subject}`,
+fileName: `LEFT👺 ${metadata.subject}`,
 fileLength: 99999999999999,
 caption: he,
-footer: `©BALOCH EDIT 2022`,
+footer: `©SATA 2022`,
 buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
-title: `*🥀برو بدرک😈(این پیام از طرف ادمین کانال بلوچ ادیت هست)*`,
-body: `🥀چنل یوتیوبی مارو ساب کنید😈`,
+title: `SATA`,
+body: `گروه پشتیبانی ربات⭕`,
 mediaType:2,
 thumbnail: buffer,
 sourceUrl: link,
