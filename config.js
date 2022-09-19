@@ -15,14 +15,14 @@ global.APIKeys = {
 }
 
 // Other
-global.owner = ['989339658384']
-global.premium = ['989339658384']
-global.botname = 'BALOCH EDIT'
-global.ownername = 'HOSEIN SARBAZI'
-global.group1 = 'https://chat.whatsapp.com/DtpQbVzujrfLRB2xvl97pp'
-global.group2 = 'https://chat.whatsapp.com/EWXqwpZO0GL45MP1ys3asy'
+global.owner = ['989175142780']
+global.premium = ['989175142780']
+global.botname = 'SATA'
+global.ownername = 'SATA'
+global.group1 = 'https://chat.whatsapp.com/F54eghVKahu00gwHoBDVTu'
+global.group2 = 'https://chat.whatsapp.com/HWUyQZfZaIaEp7TN1rqLsx'
 global.packname = 'BALOCH EDIT'
-global.ytchannel = 'https://youtube.com/channel/UCIdvdgFwdssFC0Nxx9Xk1dQ'
+global.ytchannel = 'https://chat.whatsapp.com/F54eghVKahu00gwHoBDVTu'
 global.monayawal = '100000'
 global.darahawal = '100'
 global.besiAwal = '15'
@@ -43,7 +43,7 @@ global.f3 = 'application/vnd.openxmlformats-officedocument.wordprocessingml.docu
 global.f4 = 'application/zip'
 global.f5 = 'application/pdf'
 global.f6 = 'application/vnd.android.package-archive'
-global.author = 'BALOCH EDIT'
+global.author = 'SATA'
 global.flaming = 'https://flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=amped-logo&doScale=true&scaleWidth=800&scaleHeight=500&text='
 global.sessionName = 'session'
 global.prefa = ['','!','.','🐦','🐤','🗿']
