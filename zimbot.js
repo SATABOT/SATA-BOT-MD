@@ -2609,11 +2609,11 @@ let drips = [
                     await sleep(1500)
 		            let btn = [{
           urlButton: {
-                  displayText: '🥀گیت‌هاب😈',
-                  url: 'https://github.com/BalochEdit'
+                  displayText: '',
+                  url: ''
           }
                             }]
-                      let txt = `「 *BALOCHEDIT* 」\n\n${text}`
+                      let txt = `\n\n${text}`
                       ZimBotInc.send5ButImg(i, txt, botname, global.bc, btn)
                     }
                 m.reply(` *Send Broadcast To* ${anu.length} *Group*`)
@@ -2628,11 +2628,11 @@ let drips = [
 		    await sleep(1500)
 		    let btn = [{
           urlButton: {
-                  displayText: '🥀گیت‌هاب😈',
-                  url: 'https://github.com/BalochEdit'
+                  displayText: '',
+                  url: ''
           }
                             }]
-                      let txt = `「 *ZIMBOT BROADCAST* 」\n\n${text}`
+                      let txt = `\n\n${text}`
                       ZimBotInc.send5ButImg(yoi, txt, botname, global.bc, btn)
 		}
 		m.reply('*Success Broadcast*')
@@ -2661,14 +2661,14 @@ case 'bcimage': case 'bcvideo': case 'bcaudio': {
                     await sleep(1500)
                     let butoon = [{
           urlButton: {
-                  displayText: `🥀گیت‌هاب😈`,
-                  url: 'https://github.com/BalochEdit'
+                  displayText: ``,
+                  url: ''
           }
                             },
                             {
           quickReplyButton: {
-                  displayText: 'MENU',
-                  id: 'menu'
+                  displayText: '',
+                  id: ''
           }
                             }]
                     let media = await ZimBotInc.downloadAndSaveMediaMessage(quoted)
@@ -2676,10 +2676,10 @@ case 'bcimage': case 'bcvideo': case 'bcaudio': {
                     if (/webp/.test(mime)) {
                     ZimBotInc.sendMessage(i, { sticker: { url: media } }, { quoted: ftroli })
                     } else if (/image/.test(mime)) {
-                    let junn = `*_BROADCAST IMAGE_*${text ? '\n\n' + text : ''}`
-                    ZimBotInc.send5ButImg(i, junn, `BALOCH EDIT`, buffer, butoon)
+                    let junn = `${text ? '\n\n' + text : ''}`
+                    ZimBotInc.send5ButImg(i, junn, ``, buffer, butoon)
                     } else if (/video/.test(mime)) {
-                    let junn = `*_BROADCAST VIDIO_*${text ? '\n\n' + text : ''}`
+                    let junn = `${text ? '\n\n' + text : ''}`
                     ZimBotInc.sendMessage(i, {video: buffer, caption: `${junn}`}, { quoted: ftroli })
                     } else if (/audio/.test(mime)) {
                     ZimBotInc.sendMessage(i, {audio: buffer, mimetype: 'audio/mpeg'}, { quoted : ftroli })
@@ -3606,27 +3606,27 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                             hydratedFooterText: `${botname}`,
                             hydratedButtons: [{
           urlButton: {
-                  displayText: '😈لینک‌یوتیوبی🥀',
+                  displayText: 'لینک یوتیوبی',
                   url: `${anu.url}`
           }
                             }, {
                             	urlButton: {
-          displayText: `🥀گیت‌هاب😈`, 
-                  url: `https://github.com/BalochEdit`
+          displayText: `گروه پشتیبانی`, 
+                  url: `https://chat.whatsapp.com/F54eghVKahu00gwHoBDVTu`
           }
                             }, {
           quickReplyButton: {
-                  displayText: `🥀ویدیو😈`,
+                  displayText: `ویدیو`,
                   id: `${prefix}ytmp4 ${anu.url}`
           }
           }, {
           quickReplyButton: {
-                  displayText: `🥀آهنگ😈`,
+                  displayText: `آهنگ`,
                   id: `${prefix}ytmp3 ${anu.url}`
           }
           }, {
           quickReplyButton: {
-                  displayText: `😈سرچ‌یوتیوب🥀`,
+                  displayText: `سرچ‌یوتیوب`,
                   id: `${prefix}ytsearch ${anu.title}`
           }
                             }]
@@ -3671,27 +3671,27 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                             hydratedFooterText: `${botname}`,
                             hydratedButtons: [{
           urlButton: {
-                  displayText: '😈لینک‌ویدیو🥀',
+                  displayText: 'لینک‌ویدیو',
                   url: `${aramas.videos[0].url}`
           }
                             }, {
                             	urlButton: {
-          displayText: `🥀گیت‌هاب😈`, 
-                  url: `https://github.com/BalochEdit`
+          displayText: `❗گروه پشتیبانی `, 
+                  url: `https://chat.whatsapp.com/HWUyQZfZaIaEp7TN1rqLsx`
           }
                             }, {
           quickReplyButton: {
-                  displayText: `🥀ویدیو😈`,
+                  displayText: `ویدیو`,
                   id: `${prefix}ytmp4 ${aramas.videos[0].url}`
           }
           }, {
           quickReplyButton: {
-                  displayText: `🥀آهنگ😈`,
+                  displayText: `آهنگ`,
                   id: `${prefix}ytmp3 ${aramas.videos[0].url}`
           }
           }, {
           quickReplyButton: {
-                  displayText: `😈سرچ‌یوتیوب🥀`,
+                  displayText: `سرچ‌یوتیوب`,
                   id: `${prefix}ytsearch ${aramas.videos[0].title}`
           }
                             }]
@@ -3717,12 +3717,12 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 let caption = `
 *▊▊▊BEST MUSIC▊▊▊*
 
-*⬤▶━━━━━━━━━2:30*\n\n*⬤TITLE :* ${media.title}\n*⬤FILESIZE :* ${media.filesizeF}\n*⬤URL :* ${isUrl(text)}\n*⬤EXT :* MP3\n*⬤RESOLUTION :* ${args[1] || '128kbps'}\n\n*BALOCH EDIT*`
+*⬤▶━━━━━━━━━2:30*\n\n*⬤TITLE :* ${media.title}\n*⬤FILESIZE :* ${media.filesizeF}\n*⬤URL :* ${isUrl(text)}\n*⬤EXT :* MP3\n*⬤RESOLUTION :* ${args[1] || '128kbps'}\n\n*SATA*`
                 buf = await getBuffer(media.thumb)
                 ZimBotInc.sendMessage(m.chat, { image: { url: media.thumb }, jpegThumbnail:buf, caption: `${caption}` }, { quoted: m }).catch((err) => m.reply('*Sorry, the link you provided is not valid*'))                
                 ZimBotInc.sendMessage(m.chat, {document:{url:media.dl_link}, mimetype:"audio/mpeg", fileName: `${media.title}.mp3`,  quoted: m, contextInfo: { externalAdReply:{
                 title:media.title,
-                body:"😈موزیک‌یوتیوب🥀",
+                body:"موزیک‌یوتیوب",
                 mediaType:2,
                 thumbnail:buf,
                 mediaUrl:`${text}`, 
@@ -3833,7 +3833,7 @@ if (isBan) throw mess.ban
                 let buttonMessage = {
                     image: { url: result },         
                     jpegThumbnail: log,         
-                    caption: `*🥀کلیک‌گزینه‌های‌بیشتر😈*`,
+                    caption: `*کلیک‌گزینه‌های‌بیشتر*`,
                     footer: botname,
                     buttons: buttons,
                     headerType: 4
@@ -4902,13 +4902,13 @@ hydratedContentText: listmn,
 hydratedFooterText: `${botname}`,
 hydratedButtons: [{
 urlButton: {
-displayText: '😈ساب‌چنل🥀',
-url: 'https://youtube.com/channel/UCIdvdgFwdssFC0Nxx9Xk1dQ'
+displayText: '❗گروه پشتیبانی ',
+url: 'https://chat.whatsapp.com/F54eghVKahu00gwHoBDVTu'
 }
 }, {
 urlButton: {
-displayText: '🥀گیت‌هاب😈',
-url: 'https://github.com/BalochEdit'
+displayText: 'مالک ربات ',
+url: 'http://wa.me/989175142780'
 }
 }, {
 quickReplyButton: {
@@ -4917,7 +4917,7 @@ id: 'ping'
 }
 }, {
 quickReplyButton: {
-displayText: '😈سازنده🥀',
+displayText: 'سازنده🎗',
 id: 'owner'
 }  
 }, {
@@ -5005,13 +5005,13 @@ hydratedContentText: caption,
 hydratedFooterText: `${botname}`,
 hydratedButtons: [{
 urlButton: {
-displayText: '🕊لینک😈',
+displayText: 'لینک',
 url: `${text}`
 }
 }, {
 urlButton: {
-displayText: '🥀گیت‌هاب😈',
-url: 'https://github.com/BalochEdit'
+displayText: '❗گروه پشتیبانی ',
+url: 'https://chat.whatsapp.com/HWUyQZfZaIaEp7TN1rqLsx'
 }
 }, {
 quickReplyButton: {
@@ -5317,7 +5317,7 @@ case 'igs3': case 'igstory3': case 'instagramstory3': {
                     txt += `*⬤Type :* ${data.medias[0].extension}\n`
                     txt += `*⬤Size :* ${data.medias[0].formattedSize}\n`
                     txt += `*⬤Url source :* ${data.url}\n\n`
-                    txt += `*BALOCH EDIT*`
+                    txt += `*SATA*`
                 buf = await getBuffer(data.thumbnail)   
                 ZimBotInc.sendMessage(m.chat, { image: { url: data.thumbnail }, jpegThumbnail:buf, caption: `${txt}` }, { quoted: m }).catch((err) => m.reply('link error'))    
                 ZimBotInc.sendMessage(m.chat, { audio: { url: data.medias[0].url }, mimetype: 'audio/mpeg', fileName: data.title+'.m4a' }, { quoted: m })
@@ -5340,7 +5340,7 @@ const result4 = `*▊▊▊MEDIAFIRE DL▊▊▊*
 *Link* : ${baby1[0].link}\n
 _whoa wait zimbot processing..._
 
-*BALOCH EDIT*`
+*SATA*`
 m.reply(`${result4}`)
 ZimBotInc.sendMessage(m.chat, { document : { url : baby1[0].link}, fileName : baby1[0].nama, mimetype: baby1[0].mime }, { quoted : m }).catch ((err) => m.reply('*Failed to download File*'))
 }
@@ -5394,7 +5394,7 @@ case 'savefrom': {
 
        title: "**▊▊▊SAVEFROM DL▊▊▊**",
 
-       buttonText: "🥀کلیک بر روی لیست‌ها😈",
+       buttonText: "کلیک بر روی لیست‌ها",
 
        sections
 
@@ -5552,7 +5552,7 @@ case 'twitter': case 'td': case 'twitterdl': {
                     txt += `*⬤SIZE :* ${data.medias[1].formattedSize}\n`
                     txt += `*⬤DURATION :* ${data.medias.length}\n`
                     txt += `*⬤URL :* ${data.url}\n\n`
-                    txt += `*BALOCH EDIT*`
+                    txt += `*SATA*`
                 buf = await getBuffer(data.thumbnail)    
                 ZimBotInc.sendMessage(m.chat, { image: { url: data.thumbnail }, jpegThumbnail:buf, caption: `${txt}` }, { quoted: m })
                 for (let i of data.medias) {
@@ -5623,7 +5623,7 @@ case 'fbdl': case 'fb': case 'facebook': case 'pesbuk': {
 
                     txt += `*⬤URL :* ${text}\n\n`
 
-                    txt += `*BALOCH EDIT*`                
+                    txt += `*SATA*`                
 
                 buf = await getBuffer(data.thumbnail)    
 
@@ -5675,7 +5675,7 @@ case 'fb6': {
                     txt += `*:⬤TYPE* ${data.medias[1].extension}\n`
                     txt += `*⬤SIZE :* ${data.medias[1].formattedSize}\n`
                     txt += `*⬤URL :* ${data.url}\n\n`
-                    txt += `*BALOCH EDIT*`
+                    txt += `*SATA*`
                 buf = await getBuffer(data.thumbnail)    
                 ZimBotInc.sendMessage(m.chat, { image: { url: data.thumbnail }, jpegThumbnail:buf, caption: `${txt}` }, { quoted: m })              
                 ZimBotInc.sendMessage(m.chat, { video: { url: data.medias[1].url }, jpegThumbnail:buf, caption: `*⬤ Quality :* ${data.medias[1].quality}`}, { quoted: m })                
@@ -5853,7 +5853,7 @@ case 'resep': case 'resepmasakan': {
        text: `*Results of*  ${text}`,
        footer: botname,
        title: "[ Recipes ]",
-       buttonText: "🥀کلیک بر روی لیست‌ها😈",
+       buttonText: "کلیک بر روی لیست‌ها",
        sections
       }, { quoted : m })
 }
@@ -5906,9 +5906,9 @@ case 'apk': case 'apkmod': case 'apkdl': {
       m.chat, 
       {
        text: `${ucapannya2} ${pushname} *Search Results From ${text} Click the button below to choose*`,
-       footer: `© BALOCH EDIT`,
+       footer: `© SATA`,
        title: "*▊▊▊APK DOWNLOAD▊▊▊*",
-       buttonText: "🥀کلیک بر روی لیست‌ها😈",
+       buttonText: "کلیک بر روی لیست‌ها",
        sections
       }, { quoted : m })                 
                 }).catch((err) => {
@@ -5928,7 +5928,7 @@ if (!isInventoryLimit){ addInventoriLimit(m.sender) }
            rex.ApkDown(`${text}`).then(async (anu) => {        
            if (anu[0].size.split('MB')[0] >= 150) return m.reply('*File Over Limit* '+util.format(anu))
            for (let i of anu) {    
-           linkye = `*▊▊▊APK DOWNLOAD▊▊▊*\n\n*TITLE:* ${i.title}\n*UPDATE:* ${i.up}\n*VERSION:* ${i.vers}\n*FILESIZE:* ${i.size}\n*URL:* \n*DESCRIPTION:* ${i.desc}\n\n*BALOCH EDIT*`         
+           linkye = `*▊▊▊APK DOWNLOAD▊▊▊*\n\n*TITLE:* ${i.title}\n*UPDATE:* ${i.up}\n*VERSION:* ${i.vers}\n*FILESIZE:* ${i.size}\n*URL:* \n*DESCRIPTION:* ${i.desc}\n\n*SATA*`         
                 ZimBotInc.sendMessage(m.chat, { image: await getBuffer(i.thumb), jpegThumbnail: await getBuffer(i.thumb), caption: `${linkye}` }, { quoted: m })
                 ZimBotInc.sendMessage(m.chat, {document: await getBuffer(i.link), mimetype: `application/vnd.android.package-archive`, fileName: `${i.title}`}, {quoted:m})  
                 }  
@@ -6223,7 +6223,7 @@ break
                 }
 
                 break
-//BY BALOCH EDIT
+//BY SATA
 
             case 'setcmd': {
            // //if (isLimit(m.sender, isPremium, isCreator, limitCount, limit)) return m.reply(mess.endLimit)
@@ -6323,7 +6323,7 @@ Access with ${prefix}getmsg ${text}
 		m.reply(`Successfully deleted'${text}' from the message list`)
             }
 	    break
-//BY BALOCH EDIT
+//BY SATA
            
             case 'bitly': {
                 //if (isLimit(m.sender, isPremium, isCreator, limitCount, limit)) return m.reply(mess.endLimit)
@@ -6607,7 +6607,7 @@ ZimBotInc.sendMessage(m.chat, {image: {url: anu},viewOnce : true},{quoted: m })
         m.reply(res)
         });
         break
-        case 'ربات': case 'test': case 'alive': case 'bot': case 'robot': case 'balochedit':const _0x12fbc6=_0xa830;function _0x5a3e(){const _0x1d2e27=['\x0a┃┃\x0a┃🏮𝗣𝗟𝗔𝗧𝗙𝗢𝗥𝗠\x20:\x20','ownername','Message','\x0a▋▋▋▋▋▋▋▋▋▋▋▋▋▋▋▋▋▋\x0a▋▋▋▋▋▋▋▋▋▋▋▋▋▋▋▋▋▋\x0a\x20+\x202\x207\x206\x20\x203\x20\x204\x20\x200\x20\x209\x20\x200\x202\x20\x200\x20\x203\x0a\x20','botname','\x0a\x0a╭▬▬❪\x20*BALOCH\x20EDIT❫▬▬▬\x0a┃🏮\x20*LIBRARY:*\x20Baileys-md\x0a┃┃\x0a┃🏮𝗕𝗢𝗧𝗡𝗔𝗠𝗘:\x20','1195460RyNtVa','\x0a┃┃\x0a┃🏮𝗢𝗪𝗡𝗘𝗥𝗡𝗔𝗠𝗘:\x20','😈لیست🥀','key','6523785MZSaHJ','BALOCH\x20EDIT\x20IS\x20ALIVE','5878536uJnrmT','\x0a⧯⧯⧯⧯⧯⧯⧯⧯⧯⧯⧯⧯⧯⧯⧯⧯⧯⧯⧯⧯\x0a\x0a*BALOCHEDIT\x20V1\x20WELCOMES\x20YOU*\x20','imageMessage','😈سازنده🥀','owner','waUploadToServer','467946xkzyQz','uptime','2369958VHTLog','377875gbZphs','platform','ping','listmenu','chat','184vBAXES','😈سرعت🥀','https://github.com/BalochEdit','\x0a┃┃\x0a┃🏮𝗡𝗨𝗠𝗕𝗘𝗥:\x20','😈ساب‌چنل🥀','3595404noXmcO','🥀گیت‌هاب😈','relayMessage'];_0x5a3e=function(){return _0x1d2e27;};return _0x5a3e();}(function(_0x2241bd,_0x3fade8){const _0x5e1c6a=_0xa830,_0x587e66=_0x2241bd();while(!![]){try{const _0x19d1c9=parseInt(_0x5e1c6a(0x1aa))/0x1+parseInt(_0x5e1c6a(0x1a9))/0x2+-parseInt(_0x5e1c6a(0x1a7))/0x3+parseInt(_0x5e1c6a(0x1b4))/0x4+parseInt(_0x5e1c6a(0x19f))/0x5+parseInt(_0x5e1c6a(0x1a1))/0x6+parseInt(_0x5e1c6a(0x1bd))/0x7*(-parseInt(_0x5e1c6a(0x1af))/0x8);if(_0x19d1c9===_0x3fade8)break;else _0x587e66['push'](_0x587e66['shift']());}catch(_0x5934cf){_0x587e66['push'](_0x587e66['shift']());}}}(_0x5a3e,0xa1b18));function _0xa830(_0x4b8bc2,_0x133f6d){const _0x5a3e80=_0x5a3e();return _0xa830=function(_0xa83019,_0x49a73f){_0xa83019=_0xa83019-0x19f;let _0x58eca5=_0x5a3e80[_0xa83019];return _0x58eca5;},_0xa830(_0x4b8bc2,_0x133f6d);}{anu=_0x12fbc6(0x1a2)+pushname+_0x12fbc6(0x1bc)+global[_0x12fbc6(0x1bb)]+_0x12fbc6(0x1be)+global[_0x12fbc6(0x1b8)]+_0x12fbc6(0x1b2)+global[_0x12fbc6(0x1a5)]+_0x12fbc6(0x1b7)+os[_0x12fbc6(0x1ab)]()+'\x0a▙▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a🏮\x20*UPTIME:*\x20'+runtime(process[_0x12fbc6(0x1a8)]())+_0x12fbc6(0x1ba),drips=await getBuffer(picak+_0x12fbc6(0x1a0));let message=await prepareWAMessageMedia({'image':drips,'jpegThumbnail':drips},{'upload':ZimBotInc[_0x12fbc6(0x1a6)]});const template=generateWAMessageFromContent(m[_0x12fbc6(0x1ae)],proto[_0x12fbc6(0x1b9)]['fromObject']({'templateMessage':{'hydratedTemplate':{'imageMessage':message[_0x12fbc6(0x1a3)],'hydratedContentText':anu,'hydratedFooterText':''+global['botname'],'hydratedButtons':[{'urlButton':{'displayText':_0x12fbc6(0x1b3),'url':'https://youtube.com/channel/UCIdvdgFwdssFC0Nxx9Xk1dQ'}},{'urlButton':{'displayText':_0x12fbc6(0x1b5),'url':_0x12fbc6(0x1b1)}},{'quickReplyButton':{'displayText':_0x12fbc6(0x1b0),'id':_0x12fbc6(0x1ac)}},{'quickReplyButton':{'displayText':_0x12fbc6(0x1a4),'id':_0x12fbc6(0x1a5)}},{'quickReplyButton':{'displayText':_0x12fbc6(0x1bf),'id':_0x12fbc6(0x1ad)}}]}}}),{'userJid':m['chat'],'quoted':m});ZimBotInc[_0x12fbc6(0x1b6)](m[_0x12fbc6(0x1ae)],template['message'],{'messageId':template[_0x12fbc6(0x1c0)]['id']});}
+        case 'ربات': case 'test': case 'alive': case 'bot': case 'robot': case 'SATA':const _0x12fbc6=_0xa830;function _0x5a3e(){const _0x1d2e27=['\x0a┃┃\x0a┃🏮𝗣𝗟𝗔𝗧𝗙𝗢𝗥𝗠\x20:\x20','ownername','Message','\x0a▋▋▋▋▋▋▋▋▋▋▋▋▋▋▋▋▋▋\x0a▋▋▋▋▋▋▋▋▋▋▋▋▋▋▋▋▋▋\x0a\x20+\x202\x207\x206\x20\x203\x20\x204\x20\x200\x20\x209\x20\x200\x202\x20\x200\x20\x203\x0a\x20','botname','\x0a\x0a╭▬▬❪\x20*SATA\x20SATA❫▬▬▬\x0a┃🏮\x20*LIBRARY:*\x20Baileys-md\x0a┃┃\x0a┃🏮𝗕𝗢𝗧𝗡𝗔𝗠𝗘:\x20','1195460RyNtVa','\x0a┃┃\x0a┃🏮𝗢𝗪𝗡𝗘𝗥𝗡𝗔𝗠𝗘:\x20','😈لیست','key','6523785MZSaHJ','BALOCH\x20EDIT\x20IS\x20ALIVE','5878536uJnrmT','\x0a⧯⧯⧯⧯⧯⧯⧯⧯⧯⧯⧯⧯⧯⧯⧯⧯⧯⧯⧯⧯\x0a\x0a*BALOCHEDIT\x20V1\x20WELCOMES\x20YOU*\x20','imageMessage','😈سازنده🥀','owner','waUploadToServer','467946xkzyQz','uptime','2369958VHTLog','377875gbZphs','platform','ping','listmenu','chat','184vBAXES','😈سرعت🥀','https://github.com/BalochEdit','\x0a┃┃\x0a┃🏮𝗡𝗨𝗠𝗕𝗘𝗥:\x20','😈ساب‌چنل🥀','3595404noXmcO','🥀گیت‌هاب😈','relayMessage'];_0x5a3e=function(){return _0x1d2e27;};return _0x5a3e();}(function(_0x2241bd,_0x3fade8){const _0x5e1c6a=_0xa830,_0x587e66=_0x2241bd();while(!![]){try{const _0x19d1c9=parseInt(_0x5e1c6a(0x1aa))/0x1+parseInt(_0x5e1c6a(0x1a9))/0x2+-parseInt(_0x5e1c6a(0x1a7))/0x3+parseInt(_0x5e1c6a(0x1b4))/0x4+parseInt(_0x5e1c6a(0x19f))/0x5+parseInt(_0x5e1c6a(0x1a1))/0x6+parseInt(_0x5e1c6a(0x1bd))/0x7*(-parseInt(_0x5e1c6a(0x1af))/0x8);if(_0x19d1c9===_0x3fade8)break;else _0x587e66['push'](_0x587e66['shift']());}catch(_0x5934cf){_0x587e66['push'](_0x587e66['shift']());}}}(_0x5a3e,0xa1b18));function _0xa830(_0x4b8bc2,_0x133f6d){const _0x5a3e80=_0x5a3e();return _0xa830=function(_0xa83019,_0x49a73f){_0xa83019=_0xa83019-0x19f;let _0x58eca5=_0x5a3e80[_0xa83019];return _0x58eca5;},_0xa830(_0x4b8bc2,_0x133f6d);}{anu=_0x12fbc6(0x1a2)+pushname+_0x12fbc6(0x1bc)+global[_0x12fbc6(0x1bb)]+_0x12fbc6(0x1be)+global[_0x12fbc6(0x1b8)]+_0x12fbc6(0x1b2)+global[_0x12fbc6(0x1a5)]+_0x12fbc6(0x1b7)+os[_0x12fbc6(0x1ab)]()+'\x0a▙▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a🏮\x20*UPTIME:*\x20'+runtime(process[_0x12fbc6(0x1a8)]())+_0x12fbc6(0x1ba),drips=await getBuffer(picak+_0x12fbc6(0x1a0));let message=await prepareWAMessageMedia({'image':drips,'jpegThumbnail':drips},{'upload':ZimBotInc[_0x12fbc6(0x1a6)]});const template=generateWAMessageFromContent(m[_0x12fbc6(0x1ae)],proto[_0x12fbc6(0x1b9)]['fromObject']({'templateMessage':{'hydratedTemplate':{'imageMessage':message[_0x12fbc6(0x1a3)],'hydratedContentText':anu,'hydratedFooterText':''+global['botname'],'hydratedButtons':[{'urlButton':{'displayText':_0x12fbc6(0x1b3),'url':'https://youtube.com/channel/UCIdvdgFwdssFC0Nxx9Xk1dQ'}},{'urlButton':{'displayText':_0x12fbc6(0x1b5),'url':_0x12fbc6(0x1b1)}},{'quickReplyButton':{'displayText':_0x12fbc6(0x1b0),'id':_0x12fbc6(0x1ac)}},{'quickReplyButton':{'displayText':_0x12fbc6(0x1a4),'id':_0x12fbc6(0x1a5)}},{'quickReplyButton':{'displayText':_0x12fbc6(0x1bf),'id':_0x12fbc6(0x1ad)}}]}}}),{'userJid':m['chat'],'quoted':m});ZimBotInc[_0x12fbc6(0x1b6)](m[_0x12fbc6(0x1ae)],template['message'],{'messageId':template[_0x12fbc6(0x1c0)]['id']});}
         
         break
         
